@@ -12,16 +12,19 @@ public class Data {
 
     public void setData(/*String data*/int dia,int mes, int any) throws Exception {
 //#2
-        /*if (!data.contains(SEPARADOR)) throw new Exception();*/
+        /*if (!data.contains(SEPARADOR)) throw new Exception();
+         this.data = Integer.toString(dia)+SEPARADOR+Integer.toString(mes)+SEPARADOR+Integer.toString(any);*/
 
-        this.data = Integer.toString(dia)+SEPARADOR+Integer.toString(mes)+SEPARADOR+Integer.toString(any);
+        this.dia = dia;
+        this.mes = mes;
+        this.any = any;
     }
 
     public int getAny(){
-        return data != null ? descomposaData()[2] : 0;
+        return any;
     }
 
-    private int[] descomposaData(){
+   /* private int[] descomposaData(){
 
         String[] dataDescomposada = data.split(SEPARADOR);
         int[] dataDescomposadaInt = new int[dataDescomposada.length];
@@ -30,9 +33,11 @@ public class Data {
         dataDescomposadaInt[2] = Integer.parseInt(dataDescomposada[2]);
 
         return dataDescomposadaInt;
-    }
+    }*/
 }
-
+class box <T>{
+/*classes genericas*/
+}
 
 /**
  *
